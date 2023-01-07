@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int n,m;
+    printf("enter r nd c");
+    scanf ("%d %d",&n,&m);
+    int a[n][m];
+    printf("enter 1st matrix\n");
+    for(int i=0;i<n;i++){
+    for(int j=0;j<m;j++){
+    scanf("%d",&a[i][j]);
+    }
+    }
+    printf("scalar multiplication with 3 is\n");
+    for(int i=0;i<n;i++){
+    for(int j=0;j<m;j++){
+    printf("%d ",(2*a[i][j]));
+    }printf("\n");
+    }
+
+    
+
+    return 0;
+}
+
