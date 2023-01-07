@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<math.h>
+int fact(int b){
+int f=1;
+for(int i=1;i<=b;i++){
+f=f*i;
+}
+return f;
+}
+int main()
+{
+    int a,sum=0,len,b,m,ft;
+    scanf("%d",&a);
+    len=log10(a)+1;
+    m=a;
+    while(a!=0){
+    b=a%10;
+    ft=fact(b);
+    sum=sum+ft;
+    a=a/10;
+    }
+    printf("sum=%d\n",sum);
+    if(sum==m)
+    printf("strong");
+    else
+    printf("not strong");
+    return 0;
+}
