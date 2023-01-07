@@ -1,0 +1,28 @@
+#include<stdio.h>
+void min_max(int *min,int *max,int a[]){
+    *min=*max=a[0];
+    for(int i=0;i<5;i++){
+    if(*min>a[i]){
+    *min=a[i];
+    }
+    if(*max<a[i]){
+    *max=a[i];
+    }
+       }
+    
+    }
+int main()
+{
+    int a[5];
+    for(int i=0;i<5;i++){
+    scanf("%d",&a[i]);
+    }
+    int min,max;
+    
+    min_max(&min,&max,a);
+    printf("min=%d\n max=%d",min,max);
+   
+
+    return 0;
+}
+
