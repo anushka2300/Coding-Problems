@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("enter len");
+    scanf("%d",&n);
+    printf("enter array");
+    int a[n];
+    for(int i=0;i<n;i++){
+    scanf("%d",&a[i]);
+    }
+    int l=n-2;
+    int temp=a[0];
+    for(int i=0;i<=l;i++){
+    a[i]=a[i+1];
+    }
+    a[n-1]=temp;
+    printf("array after left shift");
+    for(int i=0;i<n;i++){
+    printf ("%d",a[i]);
+    }
+
+    return 0;
+}
+
